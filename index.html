@@ -1,0 +1,308 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>اللمعة الاولى للصيانة والنظافة</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!---- start-smoth-scrolling---->
+    <!-- Custom Theme files -->
+    <link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    </script>
+    <!----font-Awesome----->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <!----font-Awesome----->
+    <!----webfonts---->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <!----//webfonts---->
+    <!----start-top-nav-script---->
+    <script>
+        $(function() {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function() {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <!----//End-top-nav-script---->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const header = document.querySelector(".header");
+            const images = [
+                "../images/header-bg1.png",
+                "../images/header-bg2.png",
+                "../images/header-bg3.png"
+            ];
+            let currentImageIndex = 0;
+
+            setInterval(() => {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                header.style.background = `url(${images[currentImageIndex]}) no-repeat center center`;
+                header.style.backgroundSize = "cover";
+            }, 2000); // تغيير الخلفية كل 5 ثوانٍ
+        });
+    </script>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!----start-container---->
+
+
+    <!----start-header---->
+    <div id="home" class="header scroll">
+        <div class="container">
+            <!---- start-logo---->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" title="Mabur" /></a>
+            </div>
+            <!---- //End-logo---->
+            <!----start-top-nav---->
+            <nav class="top-nav">
+                <ul class="top-nav">
+                    <li class="active"><a href="#" class="scroll">الرئيسية</a></li>
+                    <li class="page-scroll"><a href="#fea" class="scroll">خدماتنا</a></li>
+                    <li class="page-scroll"><a href="#work" class="scroll">انواع العقود</a></li>
+
+                </ul>
+                <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+            </nav>
+            <div class="clearfix"></div>
+            <div class="slide-text text-center">
+                <h1>اللمعة الاولى للصيانة والنظافة</h1>
+                <span>
+                   خدمات تنظيف احترافية بأفضل جودة وسرعة
+				   <br>
+				   وسعر مناسب!
+            </span>
+                <a class="slide-btn" href="#">تواصل معنا</a>
+            </div>
+            <!----//End-top-nav---->
+        </div>
+    </div>
+    <!----//End-header---->
+
+
+
+    <!----start-features----->
+    <div id="fea" class="features">
+        <div class="container">
+            <div class="head text-center">
+                <h3>خدماتنا</h3>
+                <p>
+                    نقدم مجموعة شاملة من خدمات التنظيف والصيانة لتلبية احتياجاتك.
+                </p>
+            </div>
+            <!---- start-features-grids---->
+            <div class="features-grids text-center">
+                <div class="features-grid">
+                    <span class="fea-icon1"><i class="fas fa-broom"></i></span>
+                    <h3><a href="#">جلي البلاط</a></h3>
+                    <p> تنظيف وتلميع الأرضيات باحترافية عالية. </p>
+                </div>
+                <div class="features-grid">
+                    <span class="fea-icon1"><i class="fas fa-home"></i></span>
+                    <h3><a href="#">تنظيف الفلل</a></h3>
+                    <p> خدمة تنظيف شاملة لجميع الغرف والمرافق. </p>
+                </div>
+                <div class="features-grid">
+                    <span class="fea-icon1"><i class="fas fa-building"></i></span>
+                    <h3><a href="#">غسيل الواجهات</a></h3>
+                    <p> تنظيف احترافي للواجهات الزجاجية والمباني. </p>
+                </div>
+                <div class="features-grid">
+                    <span class="fea-icon1"><i class="fas fa-bug"></i></span>
+                    <h3><a href="#">مكافحة الحشرات</a></h3>
+                    <p> حلول آمنة وفعالة للتخلص من الآفات. </p>
+                </div>
+                <div class="features-grid">
+                    <span class="fea-icon1"><i class="fas fa-water"></i></span>
+                    <h3><a href="#">غسيل الخزانات والمسابح</a></h3>
+                    <p> تعقيم وتنظيف شامل. </p>
+                </div>
+                <div class="features-grid">
+                    <span class="fea-icon1"><i class="fas fa-couch"></i></span>
+                    <h3>
+                        <a href="#"></a>
+                        غسيل الكنب والسجاد
+                        </a>
+                    </h3>
+                    <p> خدمة غسيل السجاد والآثاث من وإلى المنزل </p>
+                </div>
+            </div>
+            <!---- //End-features-grids---->
+        </div>
+    </div>
+    <!----//End-features----->
+
+
+
+    <!----//End-features----->
+
+    <!---- start-work---->
+    <div class="work">
+        <div class="container">
+            <div class="work-head">
+                <h3>أنواع العقود</h3>
+                <p>اختر العقد الذي يناسب احتياجاتك: يومي، شهري، أو سنوي.</p>
+            </div>
+            <!---- start-work-grids----->
+            <div class="work-grids">
+                <!-- عقد يومي -->
+                <div class="work-grid">
+                    <div class="w-icon">
+                        <i class="fas fa-sun"></i>
+                        <!-- أيقونة يومي -->
+                    </div>
+                    <h4>عقد يومي</h4>
+                    <p>تنظيف سريع وفعال على مدار اليوم لضمان بيئة نظيفة ومريحة.</p>
+                </div>
+
+                <!-- عقد شهري -->
+                <div class="work-grid">
+                    <div class="w-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                        <!-- أيقونة شهري -->
+                    </div>
+                    <h4>عقد شهري</h4>
+                    <p>خدمة تنظيف دورية تناسب احتياجات المنازل والشركات طوال الشهر.</p>
+                </div>
+
+                <!-- عقد سنوي -->
+                <div class="work-grid">
+                    <div class="w-icon">
+                        <i class="fas fa-award"></i>
+                        <!-- أيقونة سنوي -->
+                    </div>
+                    <h4>عقد سنوي</h4>
+                    <p>راحة واطمئنان طوال العام مع خدمات تنظيف شاملة ومتميزة.</p>
+                </div>
+            </div>
+            <!---- //End-work-grids----->
+        </div>
+    </div>
+    <!---- //End-work---->
+
+
+    <!----start-contact---->
+
+    <div class="container" id="contact" style="margin-top: 80px; direction: rtl; text-align: right;">
+        <h2 class="text-center mb-5" style="color: #007bff; font-weight: bold; font-size: 2.5rem;">تواصل معنا</h2>
+        <div class="row align-items-stretch">
+            <!-- Contact Form -->
+            <div class="col-md-6 d-flex">
+                <form id="contactForm" style="background-color: #f8f9fa; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); flex: 1; display: flex; flex-direction: column;" onsubmit="sendMail(event);">
+                    <div class="form-group mb-4">
+                        <label for="conn_name" style="font-weight: bold; font-size: 1.1rem;">الاسم</label>
+                        <input type="text" class="form-control" id="conn_name" placeholder="ادخل اسمك" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="conn_email" style="font-weight: bold; font-size: 1.1rem;">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="conn_email" placeholder="ادخل بريدك الإلكتروني" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="conn_message" style="font-weight: bold; font-size: 1.1rem;">الرسالة</label>
+                        <textarea class="form-control" id="conn_message" rows="5" placeholder="اكتب رسالتك هنا" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-auto" style="background-color: #007bff; border: none; border-radius: 5px; font-size: 1.2rem;">إرسال</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-6 d-flex">
+                <div style="background-color: #f8f9fa; color: #333; padding: 35px; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); flex: 1; display: flex; flex-direction: column;">
+                    <h5 style="text-align: center; font-weight: bold; font-size: 1.7rem; border-bottom: 3px solid #007bff; padding-bottom: 10px; margin-bottom: 25px;">معلومات الاتصال</h5>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px;"><i class="fas fa-map-marker-alt" style="color: #007bff;"></i> <strong>العنوان:</strong>  </p>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px;"><i class="fas fa-phone-alt" style="color: #007bff;"></i> <strong>الهاتف:</strong> </p>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px;"><i class="fas fa-envelope" style="color: #007bff;"></i> <strong>البريد الإلكتروني:</strong> </p>
+                    <div style="text-align: center; margin-top: auto; font-size: 1.5rem;">
+                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-facebook" style="color: #007bff;"></i></a>
+                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-twitter" style="color: #007bff;"></i></a>
+                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-instagram" style="color: #007bff;"></i></a>
+                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-linkedin" style="color: #007bff;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="row mt-5" style="margin-top: 3em;">
+            <div class="col-md-12">
+                <h5 class="text-center mb-4" style="font-weight: bold; font-size: 1.5rem;">موقعنا على الخريطة </h5>
+                <div style="width: 100%; height: 400px; border-radius: 15px; overflow: hidden; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); margin-bottom: 3em;">
+
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3626.9741830745866!2d46.703013385002016!3d24.62457468416567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDM3JzI4LjUiTiA0NsKwNDInMDMuMCJF!5e0!3m2!1sar!2s!4v1733182742105!5m2!1sar!2s"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----//End-contact---->
+    <!----start-footer---->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <a href="#"><img src="images/footer-logo.png" title="mabur" /></a>
+                <p> اللمعة الاولى للصيانة والنظافة </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!----//End-footer---->
+
+
+
+
+    <!----//End-container---->
+</body>
+
+</html>
