@@ -90,6 +90,62 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 </head>
+<style>
+    /* تحسين التوافق مع شاشات الجوال */
+    @media (max-width: 768px) {
+        .logo img {
+            width: 150px; /* تصغير حجم الشعار */
+        }
+
+        .slide-text h1 {
+            font-size: 1.8rem;
+        }
+
+        .slide-text span {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .slide-btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+        .features-grids {
+            display: flex;
+            flex-direction: column; /* ترتيب العناصر عمودياً */
+            gap: 20px; /* إضافة مسافة بين العناصر */
+        }
+
+        .work-grids {
+            display: flex;
+            flex-direction: column; /* ترتيب العناصر عمودياً */
+            gap: 20px;
+        }
+
+        .contact {
+            padding: 15px;
+        }
+
+        iframe {
+            height: 300px; /* تقليل ارتفاع الخريطة */
+        }
+
+        .top-nav ul {
+            display: none; /* إخفاء القائمة الكبيرة */
+        }
+
+        #pull {
+            display: block; /* عرض زر القائمة */
+        }
+    }
+
+    @media (min-width: 769px) {
+        #pull {
+            display: none; /* إخفاء زر القائمة على الشاشات الكبيرة */
+        }
+    }
+</style>
 
 <body>
     <!----start-container---->
