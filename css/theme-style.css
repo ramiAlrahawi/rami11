@@ -29,6 +29,37 @@ body a {
     background-size: cover;
     background-position: center;
     animation: changeBackground 15s infinite;
+    overflow: hidden;
+}
+
+
+/* طبقة تمويه الخلفية */
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    /* تطبيق التمويه */
+    z-index: 1;
+    /* طبقة خلف النص */
+    animation: changeBackground 15s infinite;
+}
+
+
+/* النص والعناصر في المقدمة */
+
+.header .container {
+    position: relative;
+    z-index: 2;
+    /* جعل النص أعلى طبقة الخلفية */
+    color: white;
+    /* لون النص */
 }
 
 
@@ -36,20 +67,16 @@ body a {
 
 @keyframes changeBackground {
     0% {
-        background: url('../images/header-bg1.png') no-repeat center center;
-        background-size: cover;
+        background-image: url('../images/header-bg1.png');
     }
     33% {
-        background: url('../images/header-bg2.png') no-repeat center center;
-        background-size: cover;
+        background-image: url('../images/header-bg2.png');
     }
     66% {
-        background: url('../images/header-bg3.png') no-repeat center center;
-        background-size: cover;
+        background-image: url('../images/header-bg3.png');
     }
     100% {
-        background: url('../images/header-bg1.png') no-repeat center center;
-        background-size: cover;
+        background-image: url('../images/header-bg1.png');
     }
 }
 
@@ -429,7 +456,7 @@ nav a#pull {
 }
 
 .work-grid:hover span {
-    background: #F3F3F3;
+    background: #f3f3f3;
     border-color: #EBEBEB;
 }
 
@@ -1143,7 +1170,7 @@ nav a#pull {
         min-height: 500px;
     }
     .slide-text h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .slide-text span {
         font-size: 1.5em;
@@ -1602,7 +1629,7 @@ nav a#pull {
     font-weight: bold;
     color: #ffffff;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.2);
+    /* background: rgba(0, 0, 0, 0.2); */
     /* خلفية داكنة شفافة للنص */
     border-radius: 8px;
     /* زوايا مستديرة */
@@ -1619,7 +1646,7 @@ nav a#pull {
     font-weight: 400;
     color: #fff;
     padding: 8px 15px;
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
     /* خلفية شفافة للنص الفرعي */
     border-radius: 6px;
     /* زوايا مستديرة */
@@ -1652,7 +1679,8 @@ nav a#pull {
 } */
 
 .features {
-    background-color: #f0f8ff;
+    background-color: #ffffff;
+    /* background-color: #f0f8ff; */
     /* خلفية خفيفة */
     padding: 50px 0;
 }
@@ -1748,11 +1776,13 @@ nav a#pull {
 /* اتا */
 
 .work {
-    background: linear-gradient(to bottom, #004d73, #0077a1);
+    /* background: linear-gradient(to bottom, #8ad8ff, #cfedf8); */
+    background: #f8f9fa;
+    /* background: #e3f2fd; */
     /* تدرج ألوان سماوي داكن */
     padding: 40px 0;
     /* تصغير المسافة العلوية والسفلية */
-    color: #fff;
+    color: #052345;
     /* النص باللون الأبيض */
     font-family: 'Arial', sans-serif;
 }
@@ -1767,7 +1797,7 @@ nav a#pull {
     font-size: 36px;
     /* تصغير حجم العنوان */
     font-weight: bold;
-    color: #fbc02d;
+    color: #020a3d;
     /* أصفر */
     margin-bottom: 8px;
     /* تقليل المسافة السفلية للعناوين */
@@ -1795,7 +1825,7 @@ nav a#pull {
 }
 
 .work-grid {
-    background: #005b96;
+    background: #336e95;
     /* لون السماوي الداكن */
     border: none;
     border-radius: 10px;
@@ -1822,7 +1852,7 @@ nav a#pull {
 .work-grid .w-icon {
     font-size: 40px;
     /* تصغير حجم الأيقونة */
-    color: #fbc02d;
+    color: #041636;
     /* لون الأيقونة */
     margin-bottom: 15px;
     /* تقليل المسافة السفلية للأيقونة */
@@ -1854,6 +1884,9 @@ nav a#pull {
 
 
 /* عاع */
+
+
+/* #fbc02d */
 
 
 /* عاع */
@@ -1988,3 +2021,185 @@ nav a#pull {
 
 
 /* هتهت */
+
+.work-grids {
+    display: flex;
+    /* لجعل العناصر تصطف في صف واحد */
+    flex-wrap: nowrap;
+    /* منع التفاف العناصر */
+    justify-content: center;
+    /* محاذاة العناصر في منتصف الشاشة */
+    gap: 10px;
+    /* مسافة صغيرة بين العناصر */
+}
+
+.work-grid {
+    flex: 0 0 100px;
+    /* عرض ثابت وصغير لكل عنصر */
+    text-align: center;
+    background-color: #06728a;
+    /* لون خلفية خفيف */
+    padding: 10px;
+    /* حواف داخلية صغيرة */
+    border: 1px solid #ddd;
+    /* حدود للعناصر */
+    border-radius: 8px;
+    /* زوايا مستديرة */
+    box-sizing: border-box;
+    /* حساب الحواف ضمن العرض */
+}
+
+@media (min-width: 768px) {
+    .work-grids {
+        flex-wrap: wrap;
+        /* السماح بالتفاف العناصر على الشاشات الأكبر */
+        justify-content: space-around;
+        /* توزيع مناسب على الشاشات الكبيرة */
+    }
+    .work-grid {
+        flex: 1 1 calc(33.333% - 20px);
+        /* عرض متساوٍ للعناصر على الشاشات الكبيرة */
+    }
+}
+
+
+/* هتهت */
+
+
+/* هتهت */
+
+
+/* هتهت */
+
+.features-grids {
+    display: flex;
+    flex-wrap: wrap;
+    /* للسماح للعناصر بالتفاف */
+    gap: 15px;
+    /* المسافة بين العناصر */
+    justify-content: center;
+    /* محاذاة العناصر في الوسط */
+}
+
+.features-grid {
+    flex: 0 0 calc(50% - 10px);
+    /* عرض ثابت نصف العنصر مع مسافة بين العناصر */
+    box-sizing: border-box;
+    /* لضمان عدم تجاوز الحجم */
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        flex: 0 0 calc(33.333% - 10px);
+        /* على الشاشات الكبيرة، يظهر 3 عناصر في الصف */
+    }
+}
+
+
+/* زر واتساب واتصال */
+
+
+/* زر واتساب واتصال */
+
+
+/* الحاوية الرئيسية للأزرار */
+
+.floating-buttons {
+    position: fixed;
+    left: 20px;
+    /* تثبيت الأزرار على يسار الشاشة */
+    bottom: 100px;
+    /* ارتفاع الأزرار من الأسفل */
+    display: flex;
+    flex-direction: column;
+    /* ترتيب الأزرار رأسيًا */
+    gap: 20px;
+    /* مسافة بين الأزرار */
+    z-index: 1000;
+    /* تأكيد الظهور فوق العناصر الأخرى */
+}
+
+
+/* القاعدة العامة لتصميم الأزرار */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    /* لون الخلفية الأساسي */
+    color: #333;
+    /* لون الأيقونة */
+    border-radius: 50%;
+    /* الشكل الدائري */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* الظل */
+    font-size: 28px;
+    /* حجم الأيقونة */
+    text-decoration: none;
+    /* إزالة الخط السفلي */
+    transition: all 0.3s ease-in-out;
+    /* تأثير الانتقال */
+}
+
+
+/* الأزرار عند التفاعل (مرور الفأرة) */
+
+.btn:hover {
+    transform: scale(1.2);
+    /* تكبير الزر قليلاً */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* تعزيز الظل */
+}
+
+
+/* لون مخصص لزر الاتصال */
+
+.call-btn {
+    background-color: #007bff;
+    /* لون أزرق */
+    color: #fff;
+    /* أيقونة بلون أبيض */
+}
+
+
+/* لون مخصص لزر الواتساب */
+
+.whatsapp-btn {
+    background-color: #25d366;
+    /* لون واتساب */
+    color: #fff;
+    /* أيقونة بلون أبيض */
+}
+
+
+/* حركة للأزرار لجذب الانتباه */
+
+.btn {
+    animation: bounce 2s infinite;
+}
+
+
+/* حركة للأزرار */
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.slide-btn {
+    position: relative;
+    z-index: 1100;
+}

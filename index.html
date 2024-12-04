@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html>
+<html dir="rtl">
 
 <head>
     <title>اللمعة الاولى للصيانة والنظافة</title>
@@ -55,10 +55,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             menuHeight = menu.height();
             $(pull).on('click', function(e) {
                 e.preventDefault();
-                menu.slideToggle();
             });
             $(window).resize(function() {
                 var w = $(window).width();
+                menu.slideToggle();
                 if (w > 320 && menu.is(':hidden')) {
                     menu.removeAttr('style');
                 }
@@ -71,9 +71,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         document.addEventListener("DOMContentLoaded", () => {
             const header = document.querySelector(".header");
             const images = [
-                "../images/header-bg1.png",
-                "../images/header-bg2.png",
-                "../images/header-bg3.png"
+                "images/header-bg1.png",
+                "images/header-bg2.png",
+                "images/header-bg3.png"
             ];
             let currentImageIndex = 0;
 
@@ -87,6 +87,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
 
 </head>
@@ -106,87 +111,91 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <!----start-top-nav---->
             <nav class="top-nav">
                 <ul class="top-nav">
-                    <li class="active"><a href="#" class="scroll">الرئيسية</a></li>
+                    <li class="active"><a href="index.html" class="scroll">الرئيسية</a></li>
                     <li class="page-scroll"><a href="#fea" class="scroll">خدماتنا</a></li>
                     <li class="page-scroll"><a href="#work" class="scroll">انواع العقود</a></li>
+                    <li class="page-scroll"><a href="#contact" class="scroll">  معلومات التواصل</a></li>
 
                 </ul>
                 <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
             </nav>
             <div class="clearfix"></div>
             <div class="slide-text text-center">
-                <h1>اللمعة الاولى للصيانة والنظافة</h1>
-                <span>
+                <h1 style="font-family: 'Cairo', sans-serif; font-size: 36px;">اللمعة الاولى للصيانة والنظافة</h1>
+                <span style="font-family: 'Cairo', sans-serif;">
                    خدمات تنظيف احترافية بأفضل جودة وسرعة
-				   <br>
+				 
 				   وسعر مناسب!
             </span>
-                <a class="slide-btn" href="#">تواصل معنا</a>
+
+
+
             </div>
+            <br>
+            <br>
+
             <!----//End-top-nav---->
         </div>
     </div>
     <!----//End-header---->
 
-
-
-    <!----start-features----->
     <div id="fea" class="features">
         <div class="container">
+
+
+
             <div class="head text-center">
                 <h3>خدماتنا</h3>
-                <p>
-                    نقدم مجموعة شاملة من خدمات التنظيف والصيانة لتلبية احتياجاتك.
-                </p>
+                <p>نقدم مجموعة شاملة من خدمات التنظيف والصيانة لتلبية احتياجاتك.</p>
             </div>
-            <!---- start-features-grids---->
+
+
             <div class="features-grids text-center">
                 <div class="features-grid">
                     <span class="fea-icon1"><i class="fas fa-broom"></i></span>
-                    <h3><a href="#">جلي البلاط</a></h3>
-                    <p> تنظيف وتلميع الأرضيات باحترافية عالية. </p>
+                    <h3>
+                        جلي البلاط</h3>
+                    <p>تنظيف وتلميع الأرضيات باحترافية عالية.</p>
                 </div>
                 <div class="features-grid">
                     <span class="fea-icon1"><i class="fas fa-home"></i></span>
-                    <h3><a href="#">تنظيف الفلل</a></h3>
-                    <p> خدمة تنظيف شاملة لجميع الغرف والمرافق. </p>
+                    <h3>
+                        تنظيف الفلل</h3>
+                    <p>خدمة تنظيف شاملة لجميع الغرف والمرافق.</p>
                 </div>
                 <div class="features-grid">
                     <span class="fea-icon1"><i class="fas fa-building"></i></span>
-                    <h3><a href="#">غسيل الواجهات</a></h3>
-                    <p> تنظيف احترافي للواجهات الزجاجية والمباني. </p>
+                    <h3>
+                        غسيل الواجهات</h3>
+                    <p>تنظيف احترافي للواجهات الزجاجية والمباني.</p>
                 </div>
                 <div class="features-grid">
                     <span class="fea-icon1"><i class="fas fa-bug"></i></span>
-                    <h3><a href="#">مكافحة الحشرات</a></h3>
-                    <p> حلول آمنة وفعالة للتخلص من الآفات. </p>
+                    <h3>
+                        مكافحة الحشرات</h3>
+                    <p>حلول آمنة وفعالة للتخلص من الآفات.</p>
                 </div>
                 <div class="features-grid">
                     <span class="fea-icon1"><i class="fas fa-water"></i></span>
-                    <h3><a href="#">غسيل الخزانات والمسابح</a></h3>
-                    <p> تعقيم وتنظيف شامل. </p>
+                    <h3>
+                        غسيل الخزانات والمسابح</h3>
+                    <p>تعقيم وتنظيف شامل.</p>
                 </div>
                 <div class="features-grid">
                     <span class="fea-icon1"><i class="fas fa-couch"></i></span>
                     <h3>
-                        <a href="#"></a>
-                        غسيل الكنب والسجاد
-                        </a>
-                    </h3>
-                    <p> خدمة غسيل السجاد والآثاث من وإلى المنزل </p>
+                        غسيل الكنب والسجاد</h3>
+                    <p>خدمة غسيل السجاد والآثاث من وإلى المنزل.</p>
                 </div>
             </div>
-            <!---- //End-features-grids---->
         </div>
     </div>
-    <!----//End-features----->
-
 
 
     <!----//End-features----->
 
     <!---- start-work---->
-    <div class="work">
+    <div id="work" class="work">
         <div class="container">
             <div class="work-head">
                 <h3>أنواع العقود</h3>
@@ -232,11 +241,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     <!----start-contact---->
 
-    <div class="container" id="contact" style="margin-top: 80px; direction: rtl; text-align: right;">
+    <div id="contact" class="container" id="contact" style="margin-top: 80px; direction: rtl; text-align: right;">
         <h2 class="text-center mb-5" style="color: #007bff; font-weight: bold; font-size: 2.5rem;">تواصل معنا</h2>
         <div class="row align-items-stretch">
             <!-- Contact Form -->
-            <div class="col-md-6 d-flex">
+            <!-- <div class="col-md-6 d-flex">
                 <form id="contactForm" style="background-color: #f8f9fa; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); flex: 1; display: flex; flex-direction: column;" onsubmit="sendMail(event);">
                     <div class="form-group mb-4">
                         <label for="conn_name" style="font-weight: bold; font-size: 1.1rem;">الاسم</label>
@@ -252,20 +261,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                     <button type="submit" class="btn btn-primary btn-block mt-auto" style="background-color: #007bff; border: none; border-radius: 5px; font-size: 1.2rem;">إرسال</button>
                 </form>
-            </div>
+            </div> -->
 
             <!-- Contact Info -->
             <div class="col-md-6 d-flex">
                 <div style="background-color: #f8f9fa; color: #333; padding: 35px; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); flex: 1; display: flex; flex-direction: column;">
                     <h5 style="text-align: center; font-weight: bold; font-size: 1.7rem; border-bottom: 3px solid #007bff; padding-bottom: 10px; margin-bottom: 25px;">معلومات الاتصال</h5>
-                    <p style="font-size: 1.2rem; margin-bottom: 20px;"><i class="fas fa-map-marker-alt" style="color: #007bff;"></i> <strong>العنوان:</strong>  </p>
-                    <p style="font-size: 1.2rem; margin-bottom: 20px;"><i class="fas fa-phone-alt" style="color: #007bff;"></i> <strong>الهاتف:</strong> </p>
-                    <p style="font-size: 1.2rem; margin-bottom: 20px;"><i class="fas fa-envelope" style="color: #007bff;"></i> <strong>البريد الإلكتروني:</strong> </p>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px;"><i class="fas fa-map-marker-alt" style="color: #007bff;"></i> <strong>العنوان:</strong> الشميسي - شارع السبالة </p>
+                    <p style="font-size: 1rem; margin-bottom: 20px;"><i class="fas fa-phone-alt" style="color: #007bff;"></i> <strong>الهاتف:</strong> 00966546925531</p>
+                    <p style="font-size: 1rem; margin-bottom: 20px;"><i class="fas fa-envelope" style="color: #007bff;"></i> <strong>البريد الإلكتروني:</strong> fristshine2024@gmail.com
+                    </p>
                     <div style="text-align: center; margin-top: auto; font-size: 1.5rem;">
-                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-facebook" style="color: #007bff;"></i></a>
-                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-twitter" style="color: #007bff;"></i></a>
-                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-instagram" style="color: #007bff;"></i></a>
-                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-linkedin" style="color: #007bff;"></i></a>
+                        <!-- <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-facebook" style="color: #007bff;"></i></a>
+                        <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-twitter" style="color: #007bff;"></i></a> -->
+                        <a href="https://www.instagram.com/first__shine1/profilecard/?igsh=amI5dG45aGU1MHly" style="color: #333; margin-right: 15px;"><i class="fab fa-instagram" style="color: #007bff;">  insta </i></a>
+                        <!-- <a href="#" style="color: #333; margin-right: 15px;"><i class="fab fa-linkedin" style="color: #007bff;"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -286,7 +296,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 
+
+
     <!----//End-contact---->
+
+
+    <!-- أزرار ثابتة على يسار الشاشة -->
+    <div class="floating-buttons">
+        <!-- زر الاتصال -->
+        <a href="tel:546925531" class="btn call-btn" title="اتصل بنا">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <!-- زر الواتساب -->
+        <a href="https://wa.me/546925531" target="_blank" class="btn whatsapp-btn" title="تواصل عبر واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+
     <!----start-footer---->
     <div class="footer">
         <div class="container">
